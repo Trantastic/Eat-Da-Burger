@@ -1,7 +1,5 @@
 $(function(){
 	$(".change-devour").on("click", function(event){
-		
-
 		var id = $(this).data("id");
 		var newdevour = $(this).data("newdevour");
 
@@ -12,7 +10,7 @@ $(function(){
 			devoured: newdevour
 		};
 
-		$.ajax("/api/burgers" + id, {
+		$.ajax("/api/burgers/" + id, {
 			method: "PUT",
 			data: newDevourState
 		}).then(function(){
