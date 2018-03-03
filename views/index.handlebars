@@ -1,7 +1,7 @@
 <h1 class="text-center">Eat-Da-Burger</h>
 
 <div class="row">
-	<div class="col-md-6 mx-auto">
+	<div class="col-md-6 mt-5">
 		{{!-- list of burgers --}}
 		<ul style="list-style: none;">
 			{{#each burgers}}
@@ -14,7 +14,7 @@
 		</ul>
 	</div>
 
-	<div class="col-md-6 mx-auto">
+	<div class="col-md-6 mt-5">
 		{{!-- list of devoured burgers --}}
 		<ul style="list-style: none;">
 			{{#each burgers}}
@@ -26,14 +26,13 @@
 	</div>
 
 {{!-- Add a burger --}}
-<div class="row">
-	<div class="col-md-12">
+	<div class="col-md-6 mx-auto mt-5">
 		<form class="create-burger">
 		  <div class="form-group">
 		    <label class="burger-entry" for="add-burger">Enter a burger you want to devour!</label>
 		    <textarea class="form-control" id="add-burger" rows="3"></textarea>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Submit</button>
+		  <button type="submit" class="btn btn-primary pl-3 pr-3">Submit</button>
 		</form>
 	</div>
 </div>
