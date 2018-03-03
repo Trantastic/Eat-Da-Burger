@@ -1,23 +1,25 @@
 <h1 class="text-center">Eat-Da-Burger</h>
 
 <div class="row">
-	<div class="col-md-3 mx-auto">
+	<div class="col-md-6 mx-auto">
 		{{!-- list of burgers --}}
 		<ul style="list-style: none;">
 			{{#each burgers}}
 				{{#unless devoured}}
-					{{> burgers/burger-devour devour=true}}
+					<li>{{id}} {{burger_name}}</li>
+						<button data-id="{{id}}" data-newdevour="{{devoured}}" class="btn btn-dark change-devour">Devour</button>
+					<br>
 				{{/unless}}
 			{{/each}}
 		</ul>
 	</div>
 
-	<div class="col-md-4 mx-auto">
+	<div class="col-md-6 mx-auto">
 		{{!-- list of devoured burgers --}}
 		<ul style="list-style: none;">
 			{{#each burgers}}
 				{{#if devoured}}
-					{{> burgers/burger-devour devour=false}}
+					<li>{{id}} {{burger_name}}</li><br>
 				{{/if}}
 			{{/each}}
 		</ul>
@@ -28,7 +30,7 @@
 	<div class="col-md-12">
 		<form class="create-burger">
 		  <div class="form-group">
-		    <label for="add-burger">Enter a burger you want to devour!</label>
+		    <label class="burger-entry" for="add-burger">Enter a burger you want to devour!</label>
 		    <textarea class="form-control" id="add-burger" rows="3"></textarea>
 		  </div>
 		  <button type="submit" class="btn btn-primary">Submit</button>

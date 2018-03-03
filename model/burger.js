@@ -18,4 +18,5 @@ var burger = {
 	}
 };
 
+// Export for controller burger_controller.js
 module.exports = burger;

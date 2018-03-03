@@ -1,12 +1,15 @@
 $(function(){
 	$(".change-devour").on("click", function(event){
-		console.log("this was triggered!");
+		
 
 		var id = $(this).data("id");
 		var newdevour = $(this).data("newdevour");
 
+		console.log(id);
+		console.log(newdevour);
+
 		var newDevourState = {
-			devoured: true
+			devoured: newdevour
 		};
 
 		$.ajax("/api/burgers" + id, {
@@ -18,12 +21,10 @@ $(function(){
 	});
 
 	$(".create-burger").on("submit", function(event){
-		console.log("create burger triggered!");
-		
 		event.preventDefault();
 
 		var newBurger = {
-			burger_name: $("#add-burger").val().trim();
+			burger_name: $("#add-burger").val().trim()
 		};
 
 		$.ajax("/api/burgers", {
