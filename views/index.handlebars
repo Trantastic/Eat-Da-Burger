@@ -1,7 +1,7 @@
 <h1 class="text-center">Eat-Da-Burger</h>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-3 mx-auto">
 		{{!-- list of burgers --}}
 		<ul style="list-style: none;">
 			{{#each burgers}}
@@ -12,13 +12,13 @@
 		</ul>
 	</div>
 
-	<div class="col-md-6">
+	<div class="col-md-4 mx-auto">
 		{{!-- list of devoured burgers --}}
-		<ul>
+		<ul style="list-style: none;">
 			{{#each burgers}}
-				{{#unless devoured}}
+				{{#if devoured}}
 					{{> burgers/burger-devour devour=false}}
-				{{/unless}}
+				{{/if}}
 			{{/each}}
 		</ul>
 	</div>
@@ -26,7 +26,7 @@
 {{!-- Add a burger --}}
 <div class="row">
 	<div class="col-md-12">
-		<form>
+		<form class="create-burger">
 		  <div class="form-group">
 		    <label for="add-burger">Enter a burger you want to devour!</label>
 		    <textarea class="form-control" id="add-burger" rows="3"></textarea>

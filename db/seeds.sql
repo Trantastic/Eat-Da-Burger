@@ -1,2 +1,5 @@
-INSERT INTO burgers (burger_name)
-VALUES ("Impossible Burger", "Goat Cheese Burger", "Turkey Burger");
+INSERT INTO burgers (burger_name, devoured)
+VALUES 
+("Impossible Burger", true), 
+("Goat Cheese Burger", true), 
+("Turkey Burger", false);

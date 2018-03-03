@@ -1,0 +1,17 @@
+.burger-pic {
+	height: 160px;
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background-color: #26C281;
+}
