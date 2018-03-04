@@ -4,7 +4,7 @@ Enter in any kind of burger and devour it! This is a full stack application that
 ## Demo
 ![](public/assets/img/eatDaBurger.gif)
 
-[Click here to play with it](https://eat-da-burger2018.herokuapp.com/)
+[Click here to play with it](https://hidden-dawn-92120.herokuapp.com/)
 
 ## Built With
 
